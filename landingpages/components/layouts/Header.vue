@@ -15,16 +15,10 @@
                 <a href="#top" class="active">Home</a>
               </li>
               <li class="scroll-to-section">
-                <a href="#features">Features</a>
-              </li>
-              <li class="scroll-to-section">
                 <a href="#about">About Us</a>
               </li>
               <li class="scroll-to-section">
                 <a href="#services">Services</a>
-              </li>
-              <li class="scroll-to-section">
-                <a href="#portfolio">Portfolio</a>
               </li>
               <li class="scroll-to-section">
                 <a href="#contact">Contact Us</a>

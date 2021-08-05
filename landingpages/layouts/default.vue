@@ -82,12 +82,13 @@
               </div>
             </div>
             <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent">SEO Dream</a> is free digital marketing CSS template provided by TemplateMo website. You are allowed to use this template for your business websites. Please DO NOT redistribute this template ZIP file on any Free CSS collection websites. You may contact us for more information. Thank you.</p>
-            <div class="main-green-button"><a href="#">Discover company</a></div>
+            <div class="main-green-button">
+              <a href="#">Discover company</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <div id="services" class="our-services section">
       <div class="container">
         <div class="row">
