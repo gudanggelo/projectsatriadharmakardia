@@ -6,7 +6,13 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import '..\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css'
+
 import '..\\assets\\css\\fontawesome.css'
+
+import '..\\assets\\css\\templatemo-seo-dream.css'
+
+import '..\\assets\\css\\animated.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
 
