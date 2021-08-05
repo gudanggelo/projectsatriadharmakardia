@@ -13,11 +13,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_8152cd46 from 'nuxt_plugin_plugin_8152cd46' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_1ce20393 from 'nuxt_plugin_pluginclient_1ce20393' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_fac915ca from 'nuxt_plugin_pluginserver_fac915ca' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_workbox_4978b3c8 from 'nuxt_plugin_workbox_4978b3c8' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_0ca4be9c from 'nuxt_plugin_metaplugin_0ca4be9c' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_114c6410 from 'nuxt_plugin_iconplugin_114c6410' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_axios_62e91e00 from 'nuxt_plugin_axios_62e91e00' // Source: .\\axios.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -68,7 +63,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"landingpages","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"landingpages"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"landingpages"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"landingpages"},{"hid":"og:description","name":"og:description","property":"og:description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.e3e9fb.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.e3e9fb.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.bbe7b852.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"landingpages","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -184,26 +179,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_8152cd46 === 'function') {
     await nuxt_plugin_plugin_8152cd46(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_pluginclient_1ce20393 === 'function') {
-    await nuxt_plugin_pluginclient_1ce20393(app.context, inject)
-  }
-
-  if (process.server && typeof nuxt_plugin_pluginserver_fac915ca === 'function') {
-    await nuxt_plugin_pluginserver_fac915ca(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_workbox_4978b3c8 === 'function') {
-    await nuxt_plugin_workbox_4978b3c8(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_metaplugin_0ca4be9c === 'function') {
-    await nuxt_plugin_metaplugin_0ca4be9c(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_iconplugin_114c6410 === 'function') {
-    await nuxt_plugin_iconplugin_114c6410(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_62e91e00 === 'function') {

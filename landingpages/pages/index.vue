@@ -1,7 +1,11 @@
 <template>
-  <Header/>
+  <div id="features">
+    <nuxt />
+  </div>
 </template>
 
 <script>
-export default {}
+
+export default {
+}
 </script>

@@ -1,5 +1,11 @@
 {
-  "Header": {
-    "description": "Auto imported from components/Header.vue"
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "LayoutsFooter": {
+    "description": "Auto imported from components/layouts/Footer.vue"
+  },
+  "LayoutsHeader": {
+    "description": "Auto imported from components/layouts/Header.vue"
   }
 }
